@@ -1,0 +1,1 @@
+This project showes first attempts at learning python code.
