@@ -1,14 +1,8 @@
 #!/usr/bin/python3
 def remove_char_at(str, n):
-    newstr = ""
-    count = 0
-    for i in str:
-        if count == n:
-            count += 1
-            continue
-        newstr += i
-        count += 1
-    return newstr
+    if n < 0:
+        return str
+    return str[:n] + str[n + 1:]
 
 print(remove_char_at("Holberton School", 3))
 print(remove_char_at("Chicago", 2))
