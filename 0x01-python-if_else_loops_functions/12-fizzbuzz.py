@@ -1,16 +1,11 @@
 #!/usr/bin/python3
 def fizzbuzz():
-    result = ""
-    fb = ""
     for i in range(1, 101):
-        if i % 3 == 0:
-            fb += "Fizz"
-        if i % 5 == 0:
-            fb += "Buzz"
-        if fb != "":
-            result += fb
-            fb = ""
+        if i % 15 == 0:
+            print("FizzBuzz ", end='')
+        elif i % 3 == 0:
+            print("Fizz ", end='')
+        elif i % 5 == 0:
+            print("Buzz ", end='')
         else:
-            result += str(i)
-        result += " "
-    print(result)
+            print("{} ".format(i), end='')
