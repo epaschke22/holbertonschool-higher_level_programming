@@ -60,15 +60,15 @@ int findidx(listint_t *head, int num)
 }
 
 /**
- * insert_nodeint - returns the nth node of a list
+ * insert_node - returns the nth node of a list
  * @head: list to look through
  * @number: the value to add to the new node
  * Return: listint node added
  */
-listint_t *insert_nodeint(listint_t **head, int number)
+listint_t *insert_node(listint_t **head, int number)
 {
 	listint_t *temp, *new, *tmphead;
-	unsigned int len, count = 0;
+	unsigned int idx, len, count = 0;
 
 	if (head == NULL)
 		return (NULL);
@@ -76,7 +76,7 @@ listint_t *insert_nodeint(listint_t **head, int number)
 	new = malloc(sizeof(listint_t));
 	if (new == NULL)
 		return (NULL);
-	new->number = number;
+	new->n = number;
 	tmphead = *head;
 	len = listint_len(tmphead);
 	idx = findidx(tmphead, number);
