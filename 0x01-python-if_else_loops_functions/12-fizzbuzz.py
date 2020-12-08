@@ -14,5 +14,3 @@ def fizzbuzz():
             result += str(i)
         result += " "
     print(result)
-
-fizzbuzz()
