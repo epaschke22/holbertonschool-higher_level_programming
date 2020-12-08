@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 def fizzbuzz():
     str = ""
-
     for i in range(1, 101):
         if i % 3 == 0:
             str += "Fizz"
