@@ -2,7 +2,7 @@
 if __name__ == "__main__":
     import sys
     if len(sys.argv) < 2:
-        print("0 arguments")
+        print("0 arguments.")
     else:
         count = 0
         args = len(sys.argv) - 1
