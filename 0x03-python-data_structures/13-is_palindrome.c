@@ -41,14 +41,10 @@ int is_palindrome(listint_t **head)
     {
         fronthead = *head;
         for (i = 0; i < len1; i++)
-		{
-            fronthead = fronthead->next;			
-		}
+            fronthead = fronthead->next;
         backhead = *head;
         for (i = 0; i < len2; i++)
-		{
-            backhead = backhead->next;			
-		}
+            backhead = backhead->next;
         if (fronthead->n != backhead->n)
             return (0);
         len1++;
