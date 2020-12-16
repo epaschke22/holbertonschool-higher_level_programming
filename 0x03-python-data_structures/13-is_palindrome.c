@@ -31,12 +31,9 @@ int is_palindrome(listint_t **head)
 
 	if (head == NULL)
 		return 0;
-	if (*head == NULL)
+	if (*head == NULL || fronthead->next == NULL)
 		return (1);
-    if (fronthead->next == NULL)
-        return (1);
     len2 = list_len(fronthead) - 1;
-
     while (len2 >= len1)
     {
         fronthead = *head;
