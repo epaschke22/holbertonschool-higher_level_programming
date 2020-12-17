@@ -5,7 +5,7 @@ def best_score(a_dictionary):
     name = ""
     age = 0
     for key, value in a_dictionary.items():
-        if value > output:
+        if value > age:
             age = value
             name = key
     return name
