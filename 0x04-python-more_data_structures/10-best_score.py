@@ -2,9 +2,10 @@
 def best_score(a_dictionary):
     if a_dictionary is None:
         return None
-    output = -10000000000
+    name = ""
+    age = 0
     for key, value in a_dictionary.items():
         if value > output:
-            output = value
-    return output
-    
+            age = value
+            name = key
+    return name
