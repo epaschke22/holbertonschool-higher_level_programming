@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 def best_score(a_dictionary):
-    if a_dictionary == None:
+    if cond is None:
         return None
-    output = 0
+    output = -10000000000
     for key, value in a_dictionary.items():
         if value > output:
             output = value
