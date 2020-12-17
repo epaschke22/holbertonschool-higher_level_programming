@@ -1,0 +1,1 @@
+This project covers examples of how to use mapping, lambda, dictionaries and filtering in Python.
