@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 def weight_average(my_list=[]):
+    if my_list == []:
+        return 0
     tuplist = []
     divlist = []
     for i in my_list:
