@@ -28,7 +28,7 @@ class Square:
         """Getter function"""
         return self.__position
 
-    @size.setter
+    @position.setter
     def position(self, value):
         """Setter function"""
         if type(value) is not tuple:
