@@ -3,20 +3,20 @@
 
 
 class Square:
-    """This is a class with a private feild"""
+    """This is a class with a private field"""
     def __init__(self, size=0, position=(0, 0)):
-        """This initializes the size feild"""
+        """This initializes the size and position field"""
         self.__size = size
         self.__position = position
 
     @property
     def size(self):
-        """Getter function"""
+        """Getter size function"""
         return self.__size
 
     @size.setter
     def size(self, value):
-        """Setter function"""
+        """Setter size function"""
         if type(value) is not int:
             raise TypeError("size must be an integer")
         if value < 0:
@@ -25,15 +25,17 @@ class Square:
 
     @property
     def position(self):
-        """Getter function"""
+        """Getter position function"""
         return self.__position
 
     @position.setter
     def position(self, value):
-        """Setter function"""
+        """Setter position function"""
         if type(value) is not tuple:
             raise TypeError("position must be a tuple of 2 positive integers")
         if len(value) != 2:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if type(value[0]) is not int or type(value[0]) is not int:
             raise TypeError("position must be a tuple of 2 positive integers")
         if value[0] < 0 or value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
@@ -44,10 +46,9 @@ class Square:
         return self.__size * self.__size
 
     def my_print(self):
-        """prints out a square"""
+        """prints out a square with an offset"""
         if self.__size == 0:
             print("")
-            return
         for i in range(self.__size):
             for k in range(self.__position[0]):
                     print("_", end="")
