@@ -2,7 +2,7 @@
 def safe_function(fct, *args):
     import sys
     try:
-        return fct(args[0], args[1])
+        return fct(*args)
     except ZeroDivisionError:
         print("Exception: division by zero", file=sys.stderr)
     except IndexError:
