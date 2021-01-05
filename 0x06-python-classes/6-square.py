@@ -6,8 +6,8 @@ class Square:
     """This is a class with a private field"""
     def __init__(self, size=0, position=(0, 0)):
         """This initializes the size and position field"""
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     @property
     def size(self):
@@ -50,9 +50,11 @@ class Square:
         """prints out a square with an offset"""
         if self.__size == 0:
             print("")
-        for i in range(self.__size):
-            for k in range(self.__position[0]):
-                    print(" ", end="")
-            for j in range(self.__size):
-                print("#", end="")
-            print("")
+        else:
+            for i in range(self.__size):
+                for k in range(self.__position[0]):
+                        print(" ", end="")
+                for j in range(self.__size):
+                    print("#", end="")
+                print("")
+                
