@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """This program adds two intagers together and returns total"""
+
+
 def add_integer(a, b=98):
     """Returns a + b only if they are numbers"""
     if type(a) not in [int, float]:

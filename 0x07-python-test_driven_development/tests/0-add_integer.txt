@@ -17,3 +17,6 @@ import module:
     >>> add_integer(4, "goodbye")
     Traceback (most recent call last):
     TypeError: b must be an integer
+    >>> add_integer(None, None)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
