@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-import math
 """This is decoded from ByteCode"""
+import math
 
 
 class MagicClass:
@@ -12,10 +12,10 @@ class MagicClass:
             raise TypeError("radius must be a number")
             self.__radius = None
 
-    def area(self, radius):
+    def area(self):
         """doc string 2"""
         return self.__radius ** 2 * math.pi
 
-    def circumference(self, radisu):
+    def circumference(self):
         """doc string 3"""
         return 2 * self.__radius * math.pi
