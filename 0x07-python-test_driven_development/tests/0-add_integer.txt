@@ -1,0 +1,19 @@
+The ``0-add_integer`` module
+======================
+
+Using ``add_integer``
+-------------------
+import module:
+    >>> add_integer = __import__("0-add_integer").add_integer
+    >>> add_integer(1, 2)
+    3
+    >>> add_integer(-20, -10)
+    -30
+    >>> add_integer(4.5, 3.9)
+    7
+    >>> add_integer("hello", 5)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+    >>> add_integer(4, "goodbye")
+    Traceback (most recent call last):
+    TypeError: b must be an integer
