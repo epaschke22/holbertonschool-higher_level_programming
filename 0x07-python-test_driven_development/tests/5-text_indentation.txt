@@ -6,23 +6,31 @@ Using ``text_indentation``
 import module:
     >>> text_indentation = __import__("5-text_indentation").text_indentation
     >>> text_indentation("one.two?three:four")
-    one
+    one.
     <BLANKLINE>
-    two
+    two?
     <BLANKLINE>
-    three
+    three:
     <BLANKLINE>
     four
+    >>> text_indentation("one. two? three: four ")
+    one.
+    <BLANKLINE>
+    two?
+    <BLANKLINE>
+    three:
+    <BLANKLINE>
+    four 
     >>> text_indentation("one")
     one
     >>> text_indentation("")
 
     >>> text_indentation("...")
+    .
     <BLANKLINE>
+    .
     <BLANKLINE>
-    <BLANKLINE>
-    <BLANKLINE>
-    <BLANKLINE>
+    .
     <BLANKLINE>
     >>> text_indentation(1)
     Traceback (most recent call last):

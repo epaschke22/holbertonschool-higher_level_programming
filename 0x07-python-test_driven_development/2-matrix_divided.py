@@ -3,6 +3,7 @@
 
 
 def matrix_divided(matrix, div):
+    """function checks all contents of matrix and divides all by div"""
     if type(matrix) is not list:
         raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
     if type(matrix[0]) is not list:
