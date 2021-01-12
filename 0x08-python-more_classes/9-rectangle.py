@@ -9,9 +9,9 @@ class Rectangle:
 
     def __init__(self, width=0, height=0):
         """This initializes the width and height"""
-        self.__width = width
-        self.__height = height
-        self.number_of_instances += 1
+        self.width = width
+        self.height = height
+        Rectangle.number_of_instances += 1
 
     @property
     def width(self):
@@ -70,7 +70,7 @@ class Rectangle:
     def __del__(self):
         """runs when object is deleted"""
         print("Bye rectangle...")
-        self.number_of_instances -= 1
+        Rectangle.number_of_instances -= 1
 
     def bigger_or_equal(rect_1, rect_2):
         """returns bigger rectangle"""
