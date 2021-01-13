@@ -5,7 +5,7 @@ after each of these characters: ., ? and :
 """
 
 
-def text_indentation(text):
+def text_indentation(text=None):
     """checks to make sure input is string and replaces characters"""
     if type(text) is not str:
         raise TypeError("text must be a string")

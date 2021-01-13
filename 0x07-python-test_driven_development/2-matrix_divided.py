@@ -2,7 +2,7 @@
 """This program devides each element of a matrix"""
 
 
-def matrix_divided(matrix, div):
+def matrix_divided(matrix=None, div=None):
     """function checks all contents of matrix and divides all by div"""
     error = "matrix must be a matrix (list of lists) of integers/floats"
     if type(matrix) is not list:

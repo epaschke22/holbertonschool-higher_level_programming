@@ -2,7 +2,7 @@
 """This program prints a square using # symbols"""
 
 
-def print_square(size):
+def print_square(size=None):
     """checks for positive ints"""
     if type(size) is not int:
         raise TypeError("size must be an integer")
