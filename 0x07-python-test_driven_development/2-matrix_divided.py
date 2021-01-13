@@ -4,20 +4,21 @@
 
 def matrix_divided(matrix, div):
     """function checks all contents of matrix and divides all by div"""
+    error = "matrix must be a matrix (list of lists) of integers/floats"
     if type(matrix) is not list:
-        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+        raise TypeError(error)
     if type(matrix[0]) is not list:
-        raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+        raise TypeError(error)
     else:
         mlen = len(matrix[0])
     for x in range(len(matrix)):
         if type(matrix[x]) is not list:
-            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+            raise TypeError(error)
         if len(matrix[x]) != mlen:
             raise TypeError("Each row of the matrix must have the same size")
         for y in range(len(matrix[x])):
             if type(matrix[x][y]) not in [int, float]:
-                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+                raise TypeError(error)
     if type(div) not in [int, float]:
         raise TypeError("div must be a number")
     if div == 0:
