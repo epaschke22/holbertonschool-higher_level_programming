@@ -3,6 +3,7 @@
 
 
 def print_square(size):
+    """checks for positive ints"""
     if type(size) is not int:
         raise TypeError("size must be an integer")
     if size < 0:
@@ -14,4 +15,3 @@ def print_square(size):
             for j in range(size):
                 print("#", end="")
             print("")
-            
