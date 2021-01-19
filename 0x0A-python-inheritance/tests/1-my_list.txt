@@ -1,0 +1,30 @@
+  
+The ``1-my_list`` module
+======================
+
+Using ``print_sorted``
+-------------------
+import module:
+    >>> MyList = __import__("1-my_list").MyList
+
+emtpy list:
+    >>> my_list = MyList()
+    >>> my_list.print_sorted()
+    []
+
+proper list:
+    >>> my_list1 = MyList()
+    >>> my_list1.append(1)
+    >>> my_list1.append(4)
+    >>> my_list1.append(2)
+    >>> my_list1.append(3)
+    >>> my_list1.append(5)
+    >>> my_list1.print_sorted()
+    [1, 2, 3, 4, 5]
+
+improper arguments:
+    >>> my_list2 = MyList()
+    >>> my_list2.print_sorted(0)
+    Traceback (most recent call last):
+    TypeError: print_sorted() takes 1 positional argument but 2 were given
+
