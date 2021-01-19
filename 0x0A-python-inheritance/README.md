@@ -1,0 +1,1 @@
+This project shows examples of how to use inheritance in python.
