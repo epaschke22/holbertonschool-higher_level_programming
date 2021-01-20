@@ -19,6 +19,8 @@ proper list:
     >>> my_list1.append(2)
     >>> my_list1.append(3)
     >>> my_list1.append(5)
+    >>> print(my_list1)
+    [1, 4, 2, 3, 5]
     >>> my_list1.print_sorted()
     [1, 2, 3, 4, 5]
 
