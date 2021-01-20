@@ -12,7 +12,7 @@ class Student:
 
     def to_json(self, attrs=None):
         """returns dictionary of class to json"""
-        if attrs == None or type(attrs) is not list:
+        if attrs is None or type(attrs) is not list:
             return vars(self)
         else:
             new_dict = {}
