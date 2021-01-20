@@ -31,8 +31,13 @@ improper arguments:
     TypeError: print_sorted() takes 1 positional argument but 2 were given
 
 improper arguments:
-    >>> my_list2 = MyList()
-    >>> my_list2.append(None)
-    >>> my_list2.print_sorted()
+    >>> my_list3 = MyList()
+    >>> my_list3.append(None)
+    >>> my_list3.print_sorted()
     [None]
 
+proper list:
+    >>> my_list4 = MyList()
+    >>> my_list4.append(1)
+    >>> my_list4.print_sorted()
+    [1]
