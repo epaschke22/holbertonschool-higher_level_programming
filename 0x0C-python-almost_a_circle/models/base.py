@@ -33,8 +33,10 @@ class Base:
             file.write(cls.to_json_string(output))
 
     @staticmethod
-    def from_json_string(json_string):
+    def from_json_string(json_string=None):
         """converts json string back to list"""
+        if json_string == None:
+            return []
         return json.loads(json_string)
 
     @classmethod
