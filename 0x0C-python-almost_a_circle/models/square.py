@@ -7,7 +7,7 @@ class Square(Rectangle):
     """Square class based on Rectangle"""
     def __init__(self, size=None, x=0, y=0, id=None):
         """init method"""
-        super.__init__(size, size, x, y, id)
+        super().__init__(size, size, x, y, id)
 
     @property
     def size(self):
