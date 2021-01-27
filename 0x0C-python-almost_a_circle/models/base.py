@@ -35,7 +35,7 @@ class Base:
     @staticmethod
     def from_json_string(json_string=None):
         """converts json string back to list"""
-        if json_string == None:
+        if json_string is None:
             return []
         return json.loads(json_string)
 
