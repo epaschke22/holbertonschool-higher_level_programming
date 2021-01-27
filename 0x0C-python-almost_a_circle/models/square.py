@@ -7,22 +7,17 @@ class Square(Rectangle):
     """Square class based on Rectangle"""
     def __init__(self, size=None, x=0, y=0, id=None):
         """init method"""
-        Rectangle.__init__(self, size, size, x, y, id)
-        self.size = size
+        super.__init__(size, size, x, y, id)
 
     @property
     def size(self):
         """size getter"""
-        return self.__size
+        return self.width
 
     @size.setter
     def size(self, value):
-        """size setter"""
-        if type(value) is not int:
-            raise TypeError("size must be an integer")
-        if value <= 0:
-            raise ValueError("size must be > 0")
-        self.__size = value
+        self.width = size
+        self.height = size
 
     def __str__(self):
         """returns string message on square stats"""
