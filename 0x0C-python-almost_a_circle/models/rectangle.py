@@ -87,7 +87,7 @@ class Rectangle(Base):
         print(display_str[:-1])
 
     def __str__(self):
-        """returns string message on rectangle stats"""
+        """returns string message on rectangle atts"""
         return "[Rectangle] ({}) {}/{} - {}/{}"\
             .format(self.id, self.x, self.y, self.width, self.height)
 
