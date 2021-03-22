@@ -2,8 +2,8 @@
 if (process.argv.length < 4) {
   console.log(0);
 } else {
-  let total = process.argv.length;
-  let a = process.argv;
+  const total = process.argv.length;
+  const a = process.argv;
   let temp;
   for (let i = 0; i < total; i++) {
     for (let j = i + 1; j < total; j++) {
@@ -14,5 +14,5 @@ if (process.argv.length < 4) {
       }
     }
   }
-  console.log(a[total-2]);
+  console.log(a[total - 2]);
 }
