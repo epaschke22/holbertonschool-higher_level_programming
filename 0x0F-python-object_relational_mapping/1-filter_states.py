@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Lists all states from a database"""
+"""Lists all states that start with N from a database"""
 import sys
 import MySQLdb
 
@@ -13,9 +13,8 @@ if __name__ == "__main__":
     cur = conn.cursor()
     cur.execute("SELECT * FROM states ORDER BY id ASC")
     rows = cur.fetchall()
-    query_rows = cur.fetchall()
-    for row in query_rows:
-        if row[1][0] == 'N'
+    for row in rows:
+        if row[1][0] == 'N':
             print(row)
     cur.close()
     conn.close()
