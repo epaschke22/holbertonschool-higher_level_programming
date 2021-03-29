@@ -3,7 +3,7 @@
 import sys
 from relationship_state import Base, State
 from relationship_city import City
-from sqlalchemy import create_engine)
+from sqlalchemy import (create_engine)
 from sqlalchemy.orm import sessionmaker, relationship
 
 
@@ -17,6 +17,7 @@ if __name__ == "__main__":
     new_id = len(session.query(State).all()) + 1
     cali = State(name="California", id=new_id)
     session.add(cali)
+    session.commit()
     sanfran = City(name="San Francisco", state_id=new_id)
     session.add(sanfran)
     session.commit()
