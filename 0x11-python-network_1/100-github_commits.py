@@ -6,6 +6,6 @@ from sys import argv
 
 if __name__ == "__main__":
     url = 'https://api.github.com/repos/{}/{}/commits'.format(argv[1], argv[2])
-    r = requests.get(url).json()
-    for i in range(10):
-        print("{}: {}".format(r[i]['sha'], r[i]['commit']['author']['name']))
+    r = requests.get(url, params={'per_page': 10}).json()
+    for i in r:
+        print("{}: {}".format(i['sha'], i['commit']['author']['name']))
