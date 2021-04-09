@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""gets the X-Request-Id value of a url"""
+"""sends request to url with an email"""
 import requests
 from sys import argv
 
