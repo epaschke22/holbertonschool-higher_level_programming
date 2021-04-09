@@ -5,7 +5,7 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    url = 'https://api.github.com/repos/{}/{}/commits'.format(argv[1], argv[2])
+    url = 'https://api.github.com/repos/{}/{}/commits'.format(argv[2], argv[1])
     r = requests.get(url, params={'per_page': 10}).json()
     for i in r:
         print("{}: {}".format(i['sha'], i['commit']['author']['name']))
