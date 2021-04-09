@@ -11,7 +11,7 @@ if __name__ == "__main__":
         letter = ""
     arg = {'q': letter}
     try:
-        r = requests.post('http://65542bf3ac51.b380b380.hbtn-cod.io:5000/search_user', data=arg).json()
+        r = requests.post('http://0.0.0.0:5000/search_user', data=arg).json()
         if not r:
             print("No result")
         else:
