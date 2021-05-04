@@ -6,7 +6,7 @@ request.get({ url: process.argv[2] }, function (error, response, body) {
   const titlelist = JSON.parse(body).results;
   for (let i = 0; i < titlelist.length; i++) {
     for (let j = 0; j < titlelist[i].characters.length; j++) {
-      if (titlelist[i].characters[j] === 'https://swapi-api.hbtn.io/api/people/18/') {
+      if (titlelist[i].characters[j] === 'https://swapi-api.hbtn.io/api/people/18') {
         count++;
       }
     }
