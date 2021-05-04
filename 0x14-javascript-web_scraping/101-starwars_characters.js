@@ -9,5 +9,6 @@ request.get({ url: movie }, function (error, response, body) {
       if (error) console.error(error);
       console.log(JSON.parse(body).name);
     });
+    sleep(1000);
   }
 });
