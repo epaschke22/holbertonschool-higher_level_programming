@@ -8,7 +8,6 @@ request.get({ url: process.argv[2] }, function (error, response, body) {
     for (let j = 0; j < titlelist[i].characters.length; j++) {
       if (titlelist[i].characters[j] === 'https://swapi-api.hbtn.io/api/people/18/') {
         count++;
-        break;
       }
     }
   }
